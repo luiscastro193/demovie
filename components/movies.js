@@ -4,8 +4,7 @@ const fileSize = 9392400;
 function importMovies() {
 	return new Promise((resolve, reject) => {
 		let request = new XMLHttpRequest();
-		//request.onprogress = event => movies.progress.value = event.loaded / (event.total || fileSize);
-		request.onprogress = event => alert(event.loaded);
+		request.onprogress = event => movies.progress.value = event.loaded / (event.total || fileSize);
 		request.open("GET", 'assets/movies.json');
 		request.responseType = "json";
 		request.onload = () => {

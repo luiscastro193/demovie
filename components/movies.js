@@ -1,5 +1,5 @@
 "use strict";
-const fileSize = 3525324;
+const fileSize = 3577438;
 
 function importMovies() {
 	return new Promise((resolve, reject) => {
